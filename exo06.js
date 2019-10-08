@@ -1,18 +1,23 @@
- function kebabCase( str = ''){
-/*
-    if(str.indexOf(' ')){
-        return str.replace(/ /g,'-');           
+module.exports= function kebabCase( str = ''){
+
+ let finish = '';
+  if(str.match(/-/))
+    {
+        finish = str.replace(/(^-|-$)/g, "")
     }
-*/
+    else if (str.match(/([A-Z])/g))//on verifie si on tombe sur des majuscules  
+    { 
+      finish = str.replace(/([A-Z])/g,' $1') // on ajoute un espace avant chaque maj
+      finish = finish.replace(/ /, "") // on remplace le premier espace par rien 
+      finish = finish.replace(/ /g, "-")// on remplace tout les espace par un tiret
+    }
 
-var str = "";
-var length = str.length;
-for (var i = 0; i <length; i++) {
-  str = str + i;
+    else {
+      finish = str.replace(/ /g, "-")
+    }
+  
+    finish = finish.toLowerCase();
+
+    return finish;
+
 }
-
-console.log(length);
-// expected output: "012345678"
-
-}
-kebabCase('testttDsSé');
