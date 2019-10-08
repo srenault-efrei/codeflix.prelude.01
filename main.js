@@ -5,4 +5,4 @@ console.log("Lower Case : ");
 console.log(lowerCase("STEVEN"));
 
 console.log("Upper Case : ");
-console.log(lowerCase("steven"));
+console.log(upperCase("steven"));
