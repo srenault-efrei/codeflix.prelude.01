@@ -1,1 +1,4 @@
-console.log("hello world");
+
+module.exports = function lowerCase(str = ""){
+return str.toLowerCase();
+}
