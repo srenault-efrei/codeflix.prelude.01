@@ -13,11 +13,13 @@ const substr = require('./exo012')
 const slice = require('./exo013')
 const count = require('./exo014')
 const countSubstrings = require('./exo015')
+const countWords = require('./exo016')
 const indexOf = require('./exo017')
 const lastIndexOf = require('./exo018')
 const insert = require('./exo019')
 const repeat = require('./exo020')
 const reverse = require('./exo021')
+const splice = require('./exo022')
 
 console.log("Lower Case :");
 console.log(lowerCase("STEVEN \n"));
@@ -118,6 +120,21 @@ console.log(repeat("gomu",0));
 console.log("\n")
 console.log("reverse : ");
 console.log(reverse("chOpper"));
+
+
+console.log("\n")
+console.log("countWords : ");
+console.log(countWords("Tony Tony ChOpper"));
+console.log(countWords("TonyTonyCh0pper"));
+console.log(countWords("tonyTony"));
+console.log(countWords("Tony Tony - Ch0pper"));
+
+
+console.log("\n")
+console.log("splice : ");
+console.log(splice("Tony Tony ChOpper",0,10));
+console.log(splice("Tony ChOpper",0,4,'Tony Tony'));
+console.log(splice("Tony Tony Usopp",-5,5,'Chopper'));
 
 
 

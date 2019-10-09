@@ -15,8 +15,9 @@ module.exports = function snakeCase(str=""){
  }
  else{
     // on remplace globalement les espace par des _
- }
     snakeCase = str.replace(/ /g,'_');  
+ }
+    
 
     // pour chaque conditions on met le mot final en minisucule
 snakeCase = snakeCase.toLowerCase(); 
