@@ -20,6 +20,12 @@ const insert = require('./exo019')
 const repeat = require('./exo020')
 const reverse = require('./exo021')
 const splice = require('./exo022')
+const trim = require('./exo023')
+const endsWith = require('./exo024')
+const includes = require('./exo025')
+const isAlpha = require('./exo026')
+const isAlphaDigit = require('./exo027')
+const isBlanck = require('./exo028')
 
 console.log("Lower Case :");
 console.log(lowerCase("STEVEN \n"));
@@ -136,5 +142,39 @@ console.log(splice("Tony Tony ChOpper",0,10));
 console.log(splice("Tony ChOpper",0,4,'Tony Tony'));
 console.log(splice("Tony Tony Usopp",-5,5,'Chopper'));
 
+console.log("\n")
+console.log("trim : ");
+console.log(trim(" Tony Tony ChOpper "));
+console.log(trim("--Tony Tony ChOpper--",'-'));
 
 
+console.log("\n")
+console.log("endsWith : ");
+console.log(endsWith("Tony Tony ChOpper","ChOpper"));
+console.log(endsWith("Tony Tony ChOpper","Tony"));   
+console.log(endsWith("ChOpper","hO",3));   
+
+console.log("\n")
+console.log("includes : ");
+console.log(includes("ChOpper","pper"));
+console.log(includes("ChOpper","O",3));
+
+console.log("\n")
+console.log("isAlpha : ");
+console.log(isAlpha("ChOpper"));
+console.log(isAlpha("ChOpper!"));
+console.log(isAlpha("ChOpper and Usopp"));
+
+
+console.log("\n")
+console.log("isAlphaDigit : ");
+console.log(isAlphaDigit("chOpper"));
+console.log(isAlphaDigit("1986"));
+console.log(isAlphaDigit("1337-42"));
+
+
+console.log("\n")
+console.log("isBlanck : ");
+console.log(isBlanck(""));
+console.log(isBlanck("   "));
+console.log(isBlanck("Chopper!"));
