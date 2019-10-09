@@ -26,6 +26,8 @@ const includes = require('./exo025')
 const isAlpha = require('./exo026')
 const isAlphaDigit = require('./exo027')
 const isBlanck = require('./exo028')
+const isDigit = require('./exo029')
+const isEmpty = require('./exo030')
 
 console.log("Lower Case :");
 console.log(lowerCase("STEVEN \n"));
@@ -176,5 +178,18 @@ console.log(isAlphaDigit("1337-42"));
 console.log("\n")
 console.log("isBlanck : ");
 console.log(isBlanck(""));
-console.log(isBlanck("   "));
+console.log(isBlanck("  "));
 console.log(isBlanck("Chopper!"));
+
+console.log("\n")
+console.log("isDigit : ");
+console.log(isDigit("42"));
+console.log(isDigit("9.4"));
+console.log(isDigit("ch0pper!"));
+
+
+console.log("\n")
+console.log("isEmpty : ");
+console.log(isEmpty(""));
+console.log(isEmpty("  "));
+console.log(isEmpty("ch0pper"));

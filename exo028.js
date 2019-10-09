@@ -1,7 +1,8 @@
 module.exports = function isBlanck(str = "") {
 
     let boolean = false;
-    if(str.trim = ' ' || str.length == 0){
+    let regex = /^\s+$/
+    if(str.match(regex) || str.length == 0 ){
         boolean = true;
     }
    return boolean
