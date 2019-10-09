@@ -10,6 +10,14 @@ const chartArt = require('./exo09')
 const first = require('./exo010')
 const last = require('./exo011')
 const substr = require('./exo012')
+const slice = require('./exo013')
+const count = require('./exo014')
+const countSubstrings = require('./exo015')
+const indexOf = require('./exo017')
+const lastIndexOf = require('./exo018')
+const insert = require('./exo019')
+const repeat = require('./exo020')
+const reverse = require('./exo021')
 
 console.log("Lower Case :");
 console.log(lowerCase("STEVEN \n"));
@@ -64,3 +72,52 @@ console.log("\n")
 console.log("substr : ");
 console.log(substr("tony tony chopper",10));
 console.log(substr("ch0pper",2,2));
+
+console.log("\n")
+
+console.log("slice : ");
+console.log(slice("chOpper",1));
+console.log(slice("chOpper",-4));
+console.log(slice("chOpper",1,4));
+
+
+console.log("\n")
+
+console.log("count : ");
+console.log(count("chOpper"));
+
+console.log("\n")
+
+console.log("countSubstrings : ");
+console.log(countSubstrings("Tony Tony Chopper!",'Tony'));
+console.log(countSubstrings("gomu gomu no bazooka",'gatling'));
+
+
+console.log("\n")
+
+console.log("indexOf : ");
+console.log(indexOf("chOpper",'O'));
+console.log(indexOf("chOpper",'o'));
+
+console.log("\n")
+console.log("lastIndexOf : ");
+console.log(lastIndexOf("chOpper",'p'));
+console.log(lastIndexOf("chOpper",'o'));
+
+console.log("\n")
+console.log("insert : ");
+console.log(insert("chpper",'O',2));
+console.log(insert("Tony",'Tony chOpper',4));
+
+console.log("\n")
+console.log("repeat : ");
+console.log(repeat("w",3));
+console.log(repeat("gomu",0));
+
+
+console.log("\n")
+console.log("reverse : ");
+console.log(reverse("chOpper"));
+
+
+
