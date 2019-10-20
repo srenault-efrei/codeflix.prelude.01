@@ -14,7 +14,6 @@ module.exports = function includes(str = "", search, positionopt = 0) {
    }
 
    return boolean;
-
-}
+} 
 
 
