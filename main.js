@@ -226,4 +226,4 @@ const unescapeRegExp = require('./exo042')
 
 // console.log(escapeRegExp('(Tony)[Tony]{Chopper}'))
 
-console.log(unescapeRegExp("\(Tony\)\[\Tony\]\{\Chopper\}"))
+// console.log(unescapeRegExp("\(Tony\)\[\Tony\]\{\Chopper\}"))
