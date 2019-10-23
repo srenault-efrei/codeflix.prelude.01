@@ -37,7 +37,7 @@
 // const escapeHtml = require('./exo039')
 // const unEscapeHtml = require('./exo040')
 // const escapeRegExp = require('./exo041')
-const unescapeRegExp = require('./exo042')
+// const unescapeRegExp = require('./exo042')
 
 // console.log("Lower Case :");
 // console.log(lowerCase("STEVEN \n"));
