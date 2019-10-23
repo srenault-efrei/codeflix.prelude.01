@@ -34,7 +34,10 @@
 // const isString = require('./exo034')
 // const chars = require('./exo036')
 // const chars = require('./exo037')
-const escapeHtml = require('./exo039')
+// const escapeHtml = require('./exo039')
+// const unEscapeHtml = require('./exo040')
+// const escapeRegExp = require('./exo041')
+const unescapeRegExp = require('./exo042')
 
 // console.log("Lower Case :");
 // console.log(lowerCase("STEVEN \n"));
@@ -217,4 +220,10 @@ const escapeHtml = require('./exo039')
 // console.log(words("TonyTonyCh0pper"))
 // console.log(words("Tony - Tony - ChOpper"))
 
-console.log(escapeHtml('<p>I love programming</p>'))
+// console.log(escapeHtml('<p>I love programming</p>'))
+
+// console.log(unEscapeHtml('%3Cp%3E;I love programming;%3C/p%3E'))
+
+// console.log(escapeRegExp('(Tony)[Tony]{Chopper}'))
+
+console.log(unescapeRegExp("\(Tony\)\[\Tony\]\{\Chopper\}"))
